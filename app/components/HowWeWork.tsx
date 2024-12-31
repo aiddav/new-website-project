@@ -1,4 +1,3 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Search, Rocket, RefreshCw } from 'lucide-react'
 
 export default function HowWeWork() {
@@ -21,24 +20,21 @@ export default function HowWeWork() {
   ]
 
   return (
-    <section id="how-we-work" className="pt-8 pb-10 md:pt-12 md:pb-14 bg-muted">
+    <section id="how-we-work" className="pt-8 pb-10 md:pt-12 md:pb-14 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">How We Work</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
-            <Card key={step.title}>
-              <CardHeader>
-                <div className="w-12 h-12 mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                  <step.icon className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle>{step.title}</CardTitle>
-                <CardDescription>{step.description}</CardDescription>
-              </CardHeader>
-            </Card>
+            <div key={step.title} className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="w-12 h-12 mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                <step.icon className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+              <p className="text-gray-600">{step.description}</p>
+            </div>
           ))}
         </div>
       </div>
     </section>
   )
 }
-

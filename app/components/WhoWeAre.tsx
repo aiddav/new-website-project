@@ -1,4 +1,3 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Code, Database, Palette, LineChart } from 'lucide-react'
 
 export default function WhoWeAre() {
@@ -31,19 +30,16 @@ export default function WhoWeAre() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Who We Are</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teams.map((team) => (
-            <Card key={team.name}>
-              <CardHeader>
-                <div className="w-12 h-12 mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                  <team.icon className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle>{team.name}</CardTitle>
-                <CardDescription>{team.description}</CardDescription>
-              </CardHeader>
-            </Card>
+            <div key={team.name} className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="w-12 h-12 mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                <team.icon className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{team.name}</h3>
+              <p className="text-gray-600 text-sm">{team.description}</p>
+            </div>
           ))}
         </div>
       </div>
     </section>
   )
 }
-
