@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Button } from "@/components/ui/button"
 
 export default function Header() {
   return (
@@ -13,10 +12,11 @@ export default function Header() {
           <Link href="#how-we-work" className="text-muted-foreground hover:text-primary transition-colors">How We Work</Link>
           <Link href="#who-we-are" className="text-muted-foreground hover:text-primary transition-colors">Who We Are</Link>
           <Link href="#join" className="text-muted-foreground hover:text-primary transition-colors">Join Multimodal</Link>
-          <Button>Find AI Talent</Button>
+          <Link href="/contact" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Find AI Talent
+          </Link>
         </nav>
       </div>
     </header>
   )
 }
-
