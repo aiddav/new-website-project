@@ -1,4 +1,3 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Brain, Cpu, Lightbulb } from 'lucide-react'
 
 export default function Services() {
@@ -26,19 +25,16 @@ export default function Services() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.title}>
-              <CardHeader>
-                <div className="w-12 h-12 mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
-              </CardHeader>
-            </Card>
+            <div key={service.title} className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="w-12 h-12 mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                <service.icon className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
+            </div>
           ))}
         </div>
       </div>
     </section>
   )
 }
-
