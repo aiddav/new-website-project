@@ -1,4 +1,5 @@
-import { useState } from 'react';
+'use client';
+import { useState, ChangeEvent } from 'react';
 
 export default function FindAI() {
   const [formData, setFormData] = useState({
@@ -15,9 +16,9 @@ export default function FindAI() {
     referral: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -44,7 +45,7 @@ export default function FindAI() {
             <input type="text" name="department" value={formData.department} onChange={handleChange} className="border p-2 w-full" required />
           </div>
           <div className="mb-4">
-            <label className="block text-left mb-2">What is your project description? (link to a <a href="https://www.example.com" className="text-blue-500">free project brief generator</a>)</label>
+            <label className="block text-left mb-2">What is your project description?</label>
             <textarea name="projectDescription" value={formData.projectDescription} onChange={handleChange} className="border p-2 w-full" required />
           </div>
           <div className="mb-4">
@@ -92,5 +93,5 @@ export default function FindAI() {
         </form>
       </div>
     </section>
-  )
-} 
+  );
+}
