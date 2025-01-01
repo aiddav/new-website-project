@@ -12,11 +12,10 @@ export default function Hero() {
         </p>
         <Link 
           href="/findAI"
-          className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors"
+          className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition-colors"
         >
           Find AI Talent
         </Link>
-        <button style={{ backgroundColor: 'black' }}>Contact Us</button>
       </div>
     </section>
   )
