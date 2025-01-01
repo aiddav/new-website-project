@@ -3,18 +3,18 @@ import { Search, Rocket, RefreshCw } from 'lucide-react'
 export default function HowWeWork() {
   const steps = [
     {
-      title: 'Discovery',
-      description: 'We work closely with you to understand your business needs and identify opportunities for AI integration.',
+      title: 'Scoping',
+      description: 'We explore your idea and understand your business goals before producing a detailed plan.',
       icon: Search,
     },
     {
-      title: 'Delivery',
-      description: 'Our expert team develops and implements custom AI solutions tailored to your specific requirements.',
+      title: 'Development',
+      description: 'In 4 weeks, our team develops and implements the MVP of the AI agent plan.',
       icon: Rocket,
     },
     {
       title: 'Optimisation',
-      description: 'We continuously refine and optimize your AI agents to ensure they deliver maximum value over time.',
+      description: 'Once in production, we refine and optimize your AI agent for another 4 weeks',
       icon: RefreshCw,
     },
   ]
@@ -24,7 +24,7 @@ export default function HowWeWork() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">How We Work</h2>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto text-center">
-        Working in lockstep with you and your team, we rapidly put use cases into production in 4 - 5 weeks.
+        Working in lockstep with you and your team, we rapidly put use cases into production in 4 weeks.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
