@@ -20,9 +20,12 @@ export default function HowWeWork() {
   ]
 
   return (
-    <section id="how-we-work" className="pt-8 pb-10 md:pt-12 md:pb-14 bg-gray-50">
+    <section id="how-we-work" className="pt-4 pb-10 md:pt-6 md:pb-14">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">How We Work</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">How We Work</h2>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto text-center">
+        Working in lockstep with you and your team, we rapidly put use cases into production in 4 - 5 weeks.
+        </p>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div key={step.title} className="bg-white p-6 rounded-lg shadow-sm">

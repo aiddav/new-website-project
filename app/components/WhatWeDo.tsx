@@ -4,7 +4,7 @@ export default function WhatWeDo() {
   const services = [
     {
       title: 'Data Processing',
-      description: 'Capture, process, store and transform unstructured and structured data',
+      description: 'Capture, process, store and transform your unstructured and structured data',
       icon: Database,
     },
     {
@@ -22,7 +22,10 @@ export default function WhatWeDo() {
   return (
     <section id="what-we-do" className="pt-4 pb-10 md:pt-6 md:pb-14">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What We Do</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">What We Do</h2>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto text-center">
+          We build, train and optimise AI Agents that seamlessly integrate with your internal systems and data.
+        </p>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.title} className="bg-white p-6 rounded-lg shadow-sm">

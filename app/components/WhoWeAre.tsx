@@ -27,7 +27,10 @@ export default function WhoWeAre() {
   return (
     <section id="who-we-are" className="pt-8 pb-10 md:pt-12 md:pb-14">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Who We Are</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Who We Are</h2>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto text-center">
+          Our team built AI agents for leading fintechs, YC-backed startups and Fortune 500 enterprises
+        </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teams.map((team) => (
             <div key={team.name} className="bg-white p-6 rounded-lg shadow-sm">
