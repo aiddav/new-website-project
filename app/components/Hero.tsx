@@ -8,7 +8,7 @@ export default function Hero() {
           Build AI Agents On Demand
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-         Hire world-class AI talent for your most pressing projects
+         Hire from the world's top network of AI talent for your most pressing projects
         </p>
         <Link 
           href="/findAI"

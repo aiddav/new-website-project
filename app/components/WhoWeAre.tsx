@@ -18,8 +18,8 @@ export default function WhoWeAre() {
       icon: Palette,
     },
     {
-      name: 'Performance Analysts',
-      description: 'Specialists in monitoring and optimizing AI agent performance.',
+      name: 'Evaluation Analysts',
+      description: 'Specialists in optimizing AI agent performance by providing ground truth data.',
       icon: LineChart,
     },
   ]

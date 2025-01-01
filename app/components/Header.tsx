@@ -12,7 +12,7 @@ export default function Header() {
           <Link href="#how-we-work" className="text-muted-foreground hover:text-black transition-colors">How We Work</Link>
           <Link href="#who-we-are" className="text-muted-foreground hover:text-black transition-colors">Who We Are</Link>
           <Link href="#join" className="text-muted-foreground hover:text-black transition-colors">Join Multimodal</Link>
-          <Link href="/contact" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+          <Link href="/findAI" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
             Find AI Talent
           </Link>
         </nav>
