@@ -31,15 +31,14 @@ export default function WhoWeAre() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teams.map((team) => (
             <div key={team.name} className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 mb-4 rounded-full bg-blue-100 flex items-center justify-center">
-                <team.icon className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+                <team.icon className="w-6 h-6 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{team.name}</h3>
               <p className="text-gray-600 text-sm">{team.description}</p>
             </div>
           ))}
         </div>
-        <button style={{ backgroundColor: 'black' }}>Discover</button>
       </div>
     </section>
   )

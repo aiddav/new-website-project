@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground">
+    <footer id="contact" className="bg-black text-white">
       <div className="container mx-auto px-4 py-10">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
@@ -19,13 +19,11 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-sm">123 AI Street, Tech City, 12345</p>
-            <p className="text-sm">contact@aiconsultancy.com</p>
-            <p className="text-sm">+1 (123) 456-7890</p>
+            <p className="text-sm">multimodalpartners@gmail.com</p>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-primary-foreground/10 text-center text-sm">
-          © {new Date().getFullYear()} Function AI. All rights reserved.
+        <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm">
+          © {new Date().getFullYear()} Multimodel Partners. All rights reserved.
         </div>
       </div>
     </footer>

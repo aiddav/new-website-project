@@ -26,15 +26,14 @@ export default function HowWeWork() {
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div key={step.title} className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 mb-4 rounded-full bg-blue-100 flex items-center justify-center">
-                <step.icon className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+                <step.icon className="w-6 h-6 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-gray-600">{step.description}</p>
             </div>
           ))}
         </div>
-        <button style={{ backgroundColor: 'black' }}>Get Started</button>
       </div>
     </section>
   )
