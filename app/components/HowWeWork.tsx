@@ -34,6 +34,7 @@ export default function HowWeWork() {
             </div>
           ))}
         </div>
+        <button style={{ backgroundColor: 'black' }}>Get Started</button>
       </div>
     </section>
   )

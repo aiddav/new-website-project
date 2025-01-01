@@ -31,6 +31,7 @@ export default function Services() {
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
+              <button style={{ backgroundColor: 'black' }}>Learn More</button>
             </div>
           ))}
         </div>

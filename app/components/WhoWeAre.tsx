@@ -39,6 +39,7 @@ export default function WhoWeAre() {
             </div>
           ))}
         </div>
+        <button style={{ backgroundColor: 'black' }}>Discover</button>
       </div>
     </section>
   )

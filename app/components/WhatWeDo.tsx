@@ -36,6 +36,7 @@ export default function WhatWeDo() {
             </div>
           ))}
         </div>
+        <button style={{ backgroundColor: 'black' }}>Explore</button>
       </div>
     </section>
   )

@@ -16,6 +16,7 @@ export default function Hero() {
         >
           Find AI Talent
         </Link>
+        <button style={{ backgroundColor: 'black' }}>Contact Us</button>
       </div>
     </section>
   )
